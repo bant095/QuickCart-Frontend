@@ -11,6 +11,7 @@
   --color-232f3e: #232f3e;
   --color-232f3a: #232f3a;
   --color-bf4800: #bf4800;
+  --color-f5f5f7: #f5f5f7;
 }
 
 body {
@@ -197,6 +198,12 @@ footer:not(:first-child) {
 
 .small-banner {
   width: 48%;
+}
+
+/* Home Wrapper [second section] */
+.home-wrapper-2 {
+  background-color: var(--color-f5f5f7);
+  padding: 0 20px;
 }
 
 /* HOME PAGE ENDS HERE */
