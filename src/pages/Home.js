@@ -146,7 +146,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* third section */}
+      {/* home wrapper third section */}
       <section className='home-wrapper-2 py5'>
         <div className='container-xxl'>
           <div className='row'>
@@ -229,7 +229,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Feacture collection section */}
+      {/* Feature collection section */}
       <section className='featured-wrapper py-5 home-wrapper-2'>
         <div className='container-xxl'>
           <div className='row'>
@@ -240,6 +240,78 @@ const Home = () => {
             <ProductCard />
             <ProductCard />
             <ProductCard />
+          </div>
+        </div>
+      </section>
+
+      {/* Famous Wrapper */}
+      <section className='famous-wrapper'>
+        <div className='container-xxl'>
+          <div className='row'>
+            {/* 1 */}
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img
+                  src='images/famous-01.webp'
+                  className='img-fluid'
+                  alt='watch'
+                />
+                <div className='famous-content position-absolute'>
+                  <h5>Big Screen</h5>
+                  <h6>Smart Watch Series</h6>
+                  <p> From $399 or $16.62/mo. for 24 mo.*</p>
+                </div>
+              </div>
+            </div>
+            {/* 2 */}
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img
+                  src='images/famous-02.webp'
+                  className='img-fluid'
+                  alt='watch'
+                />
+                <div className='famous-content position-absolute'>
+                  <h5 className='text-dark'>STUDIO DISPLAY</h5>
+                  <h6 className='text-dark'>600 nits of brightness</h6>
+                  <p className='text-dark'> 27-inches 5k Retina Display</p>
+                </div>
+              </div>
+            </div>
+            {/* 3 */}
+            <div className='col-3'>
+              <div className='famous-card text-dark position-relative'>
+                <img
+                  src='images/famous-03.webp'
+                  className='img-fluid'
+                  alt='watch'
+                />
+                <div className='famous-content position-absolute'>
+                  <h5 className='text-dark'>SMARTPHONES</h5>
+                  <h6 className='text-dark'>Smartphone 13 Pro.</h6>
+                  <p className='text-dark'>
+                    Now in Green from $999.00 or $41.62/mo. for 24 mo. footnote*
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* 4 */}
+            <div className='col-3'>
+              <div className='famous-card  text-dark position-relative'>
+                <img
+                  src='images/famous-04.webp'
+                  className='img-fluid'
+                  alt='watch'
+                />
+                <div className='famous-content position-absolute'>
+                  <h5 className='text-dark'>HOME SPACING</h5>
+                  <h6 className='text-dark'>Room-filling sound</h6>
+                  <p className='text-dark'>
+                    From $699 or $116.6258/mo. for 12 mo.*
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -256,6 +328,29 @@ const Home = () => {
               <SpecialProduct />
               <SpecialProduct />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Popular product section */}
+      <section className='popular-wrapper py-5 home-wrapper-2'>
+        <div className='container-xxl'>
+          <div className='row'>
+            <div className='col-12'>
+              <h3 className='section-heading'>Our Popular Products</h3>
+            </div>
+          </div>
+          <div className='row'>
+            {/* <div className='col-2'>
+              <div className='card'></div>
+            </div>
+            <div className='col-2'>
+              <div className='card'></div>
+            </div> */}
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
           </div>
         </div>
       </section>
