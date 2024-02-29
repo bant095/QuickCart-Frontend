@@ -13,7 +13,7 @@ const ProductCard = () => {
         </div>
         <div className='product-image'>
           <img src='images/watch.jpg' className='img-fluid' alt='watch' />
-          <img src='images/watch-1.avif' className='img-fluid' alt='watch' />
+          <img src='images/watch-2.avif' className='img-fluid' alt='watch' />
         </div>
         <div className='product-details'>
           <h6 className='brand'>Navels</h6>
