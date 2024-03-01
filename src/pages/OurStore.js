@@ -33,7 +33,7 @@ const OurStore = () => {
                 <h3 className='filter-title'>Random Product</h3>
               </div>
             </div>
-
+            {/* <div></div> */}
             <div className='col-9'></div>
           </div>
         </div>
