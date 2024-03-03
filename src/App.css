@@ -309,6 +309,7 @@ footer:not(:first-child) {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
 }
 
 .product-card .product-image > img:last-child {
@@ -350,6 +351,12 @@ footer:not(:first-child) {
   color: var(--color-1c1c1b);
 }
 
+.product-card p.description {
+  font-size: 13px;
+  color: var(--color-777);
+  margin-right: 20px;
+}
+
 .action-bar {
   top: 10%;
   right: -23px;
@@ -361,7 +368,7 @@ footer:not(:first-child) {
   right: 15px;
 }
 
-/* Product Card ens here */
+/* Product Card ends here */
 
 /* =========== */
 /* Special product */
@@ -496,4 +503,45 @@ footer:not(:first-child) {
   cursor: pointer;
 }
 
+.gr-12 {
+  width: 100%;
+}
+
+.gr-6 {
+  width: 49%;
+}
+
+.gr-4 {
+  width: 32%;
+}
+
+.gr-3 {
+  width: 24%;
+}
+
+.gr-12 .product-card {
+  display: flex;
+  gap: 20px;
+}
+
+.gr-6 .product-image {
+  width: 100%;
+}
+
+.gr-6 .product-image img {
+  margin: auto;
+  display: block;
+}
+
+.gr-12 .product-card .product-image {
+  width: 270px;
+}
+
+.gr-12 .product-card .product-image {
+  height: auto;
+}
+
+.gr-12 .action-bar {
+  top: 17%;
+}
 /* OUR STORE PAGE ENDS HERE */
