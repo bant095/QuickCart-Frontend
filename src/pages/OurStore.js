@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BreadCrumb from '../components/BreadCrumb';
 import Meta from '../components/Meta';
 import ReactStars from 'react-rating-stars-component';
+import ProductCard from '../components/ProductCard';
 
 const OurStore = () => {
+  const [grid, setGrid] = useState(4);
+
   return (
     <>
       <Meta title={'Our Store'} />
@@ -287,27 +290,44 @@ const OurStore = () => {
                     <p className='totalproducts mb-0'>21 Products</p>
                     <div className='d-flex gap-10 align-items-center grid'>
                       <img
+                        onClick={() => {
+                          setGrid(3);
+                        }}
                         src='images/gr4.svg'
                         alt='grid'
                         className='d-block img-fluid'
                       />
                       <img
+                        onClick={() => {
+                          setGrid(4);
+                        }}
                         src='images/gr3.svg'
                         alt='grid'
                         className='d-block img-fluid'
                       />
                       <img
+                        onClick={() => {
+                          setGrid(6);
+                        }}
                         src='images/gr2.svg'
                         alt='grid'
                         className='d-block img-fluid'
                       />
                       <img
+                        onClick={() => {
+                          setGrid(12);
+                        }}
                         src='images/gr.svg'
                         alt='grid'
                         className='d-block img-fluid'
                       />
                     </div>
                   </div>
+                </div>
+              </div>
+              <div className='products-list pb-5'>
+                <div className='d-flex gap-10 flex-wrap'>
+                  <ProductCard grid={grid} />
                 </div>
               </div>
             </div>
