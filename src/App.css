@@ -693,3 +693,11 @@ footer:not(:first-child) {
   color: white;
 }
 /* Auth Card end */
+
+/* -============== */
+/* Policy page */
+
+.policy {
+  background-color: white;
+  padding: 30px;
+}
