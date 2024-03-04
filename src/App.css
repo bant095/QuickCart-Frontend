@@ -300,6 +300,26 @@ footer:not(:first-child) {
   line-height: 22px;
 }
 
+/* single-blog-card */
+.single-blog-card h3 {
+  font-size: 24px;
+  counter-reset: var(--color-1c1c1b);
+  font-weight: 600;
+}
+
+.single-blog-card a {
+  font-size: 18px;
+  color: var(--color-777);
+  margin-bottom: 20px;
+}
+
+.single-blog-card p {
+  font-size: 14px;
+  color: var(--color-777);
+}
+
+/* single-blog-card ENDS */
+
 /* Blog card ends here */
 
 /* ===== */

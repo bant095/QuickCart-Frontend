@@ -18,7 +18,7 @@ const BlogCard = () => {
           Ah, the sun's gentle embrace awakens the world with its golden rays,
           casting a warm glow upon the earth below.
         </p>
-        <Link to='/' className='button'>
+        <Link to='/blog/:id' className='button'>
           Read More
         </Link>
       </div>
