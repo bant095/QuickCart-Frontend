@@ -627,3 +627,49 @@ footer:not(:first-child) {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 /* Compare product cared ends here */
+
+/* ========== */
+/* LOGIN (AUTH CARD) */
+
+.auth-card {
+  padding: 20px;
+  background-color: white;
+  width: 500px;
+  margin: 30px auto;
+}
+
+.auth-card h3 {
+  font-size: 19px;
+  font-size: 500;
+  color: var(--color-777);
+}
+
+.auth-card .form-control {
+  height: 50px;
+  background-color: var(--color-f5f5f7);
+  color: var(--color-777);
+  font: 14px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.auth-card p {
+  font-size: 13px;
+  color: var(--color-777);
+}
+
+.auth-card a {
+  font-size: 14px;
+  color: var(--color-1c1c1b);
+  font-weight: 400;
+}
+
+.auth-card .signup {
+  background-color: var(--color-bf4800);
+  color: var(--color-131921);
+}
+.auth-card .signup:hover {
+  background-color: var(--color-131921);
+  color: white;
+}
+/* Auth Card end */
