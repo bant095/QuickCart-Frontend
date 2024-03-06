@@ -71,7 +71,7 @@ const Cart = () => {
                   <div>
                     <h4>Sub Total: $100</h4>
                     <p>Taxes and shipping calculated at checkout</p>
-                    <Link to='/' className='button'>
+                    <Link to='/checkout' className='button'>
                       Checkout
                     </Link>
                   </div>
