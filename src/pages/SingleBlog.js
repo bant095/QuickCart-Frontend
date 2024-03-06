@@ -3,6 +3,7 @@ import Meta from '../components/Meta';
 import BreadCrumb from '../components/BreadCrumb';
 import { Link } from 'react-router-dom';
 import { IoIosArrowRoundBack } from 'react-icons/io';
+import blog from '../images/blog-1.jpg';
 
 const SingleBlog = () => {
   return (
@@ -22,7 +23,7 @@ const SingleBlog = () => {
                 <h3 className='title'>
                   A Beautiful Sunday Morning Renaissance
                 </h3>
-                <img src='/images/blog-1.jpg' alt='blog' />
+                <img src={blog} alt='blog' />
                 <p>
                   You’re only as good as your last collection, which is an
                   enormous pressure. I think there is something about luxury –

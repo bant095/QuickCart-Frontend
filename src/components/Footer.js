@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import newsletter from '../images/newsletter.png';
 
 const Footer = () => {
   return (
@@ -9,9 +10,9 @@ const Footer = () => {
       <footer className='py-4'>
         <div className='container-xxl'>
           <div className=' row align-items-center'>
-            <div className='d-flex flex-row align-items-center justify-center gap-30 '>
+            <div className='d-flex flex-row align-items-center justify-content-center gap-30 '>
               <div className='footer-top-data d-flex gap-30 align-items-center'>
-                <img src='images/newsletter.png' alt='newsletter' />
+                <img src={newsletter} alt='newsletter' />
                 <h2 className='mb-0 text-white fs-5'>Sign Up for Newsletter</h2>
               </div>
               <div className='col-7'>
