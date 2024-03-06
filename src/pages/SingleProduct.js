@@ -19,6 +19,7 @@ const SingleProduct = () => {
     img: 'https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
   };
 
+  // Copy text function board
   const copyToClipboard = (text) => {
     console.log('text', text);
     var textField = document.createElement('textarea');
@@ -101,7 +102,7 @@ const SingleProduct = () => {
                   </a>
                 </div>
 
-                <div className='border-bottom py-3'>
+                <div className=' py-3'>
                   <div className='d-flex gap-10 align-items-center'>
                     <h3 className='product-headings'>Type: </h3>
                     <p className='product-data'>Watch</p>
@@ -184,25 +185,7 @@ const SingleProduct = () => {
                     </div>
                   </div>
 
-                  {/* <div className='d-flex gap-10 flex-column mt-2 mb-3'>
-                    <h3 className='product-headings'>Size: </h3>
-                    <div className='d-flex flex-wrap gap-15'>
-                      <span className='badge border border-1 bg-white text-dark border-secondary'>
-                        S
-                      </span>
-                      <span className='badge border border-1 bg-white text-dark border-secondary'>
-                        M
-                      </span>
-                      <span className='badge border border-1 bg-white text-dark border-secondary'>
-                        L
-                      </span>
-                      <span className='badge border border-1 bg-white text-dark border-secondary'>
-                        XXL
-                      </span>
-                    </div>
-                  </div> */}
-
-                  <div className='d-flex flex-column gap-10  my-2'>
+                  <div className='d-flex flex-column  gap-10 mt-3  my-3'>
                     <h3 className='product-headings'>Shipping & Returns: </h3>
                     <p className='product-data'>
                       Free shipping and returns available on all orders! We ship
@@ -211,7 +194,7 @@ const SingleProduct = () => {
                     </p>
                   </div>
 
-                  <div className='d-flex align-items-center gap-10  my-2'>
+                  <div className='d-flex align-items-center gap-10  my-3'>
                     <h3 className='product-headings'>Product Link:</h3>
                     <a
                       href='javascript:void(0);'

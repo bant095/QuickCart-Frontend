@@ -2,6 +2,14 @@ import React from 'react';
 import ReactStars from 'react-rating-stars-component';
 import { Link, useLocation } from 'react-router-dom';
 
+import prodcompare from '../images/prodcompare.svg';
+import wish from '../images/wish.svg';
+import wishlist from '../images/wishlist.svg';
+import watch from '../images/watch.jpg';
+import watch2 from '../images/watch-2.avif';
+import addcart from '../images/add-cart.svg';
+import view from '../images/view.svg';
+
 const ProductCard = (props) => {
   const { grid } = props;
   let location = useLocation();
@@ -14,12 +22,12 @@ const ProductCard = (props) => {
         <Link to='/product/:id' className='product-card position-relative'>
           <div className='wishlist-icon position-absolute'>
             <Link>
-              <img src='images/wish.svg' alt='wish' />
+              <img src={wish} alt='wish' />
             </Link>
           </div>
           <div className='product-image'>
-            <img src='images/watch.jpg' className='img-fluid' alt='watch' />
-            <img src='images/watch-2.avif' className='img-fluid' alt='watch' />
+            <img src={watch} className='img-fluid' alt='watch' />
+            <img src={watch2} className='img-fluid' alt='watch' />
           </div>
           <div className='product-details'>
             <h6 className='brand'>Navels</h6>
@@ -44,13 +52,13 @@ const ProductCard = (props) => {
           <div className='action-bar position-absolute'>
             <div className='d-flex flex-column'>
               <Link>
-                <img src='images/prodcompare.svg' alt='compare' />
+                <img src={prodcompare} alt='compare' />
               </Link>
               <Link>
-                <img src='images/view.svg' alt='view' />
+                <img src={view} alt='view' />
               </Link>
               <Link>
-                <img src='images/add-cart.svg' alt='cart' />
+                <img src={addcart} alt='cart' />
               </Link>
             </div>
           </div>
@@ -67,12 +75,12 @@ const ProductCard = (props) => {
         <Link className='product-card position-relative'>
           <div className='wishlist-icon position-absolute'>
             <Link>
-              <img src='images/wish.svg' alt='wish' />
+              <img src={wish} alt='wish' />
             </Link>
           </div>
           <div className='product-image'>
-            <img src='images/watch.jpg' className='img-fluid' alt='watch' />
-            <img src='images/watch-2.avif' className='img-fluid' alt='watch' />
+            <img src={watch} className='img-fluid' alt='watch' />
+            <img src={watch2} className='img-fluid' alt='watch' />
           </div>
           <div className='product-details'>
             <h6 className='brand'>Navels</h6>
@@ -97,13 +105,13 @@ const ProductCard = (props) => {
           <div className='action-bar position-absolute'>
             <div className='d-flex flex-column'>
               <Link>
-                <img src='images/prodcompare.svg' alt='compare' />
+                <img src={prodcompare} alt='compare' />
               </Link>
               <Link>
-                <img src='images/view.svg' alt='view' />
+                <img src={view} alt='view' />
               </Link>
               <Link>
-                <img src='images/add-cart.svg' alt='cart' />
+                <img src={addcart} alt='cart' />
               </Link>
             </div>
           </div>
