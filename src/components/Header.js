@@ -109,7 +109,7 @@ const Header = () => {
               <div>
                 <div className='dropdown'>
                   <button
-                    class='btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center '
+                    className='btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center '
                     type='button'
                     id='dropdownMenuButton1'
                     data-bs-toggle='dropdown'

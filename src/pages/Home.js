@@ -4,12 +4,14 @@ import Marquee from 'react-fast-marquee';
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
 import SpecialProduct from '../components/SpecialProduct';
+import Container from '../components/Container';
+import { services } from '../utils/Data';
 
 const Home = () => {
   return (
     <>
       {/* first section */}
-      <section className='home-wrapper-1 py-5'>
+      <Container class1='home-wrapper-1 py-5'>
         <div className='row'>
           <div className='col-6'>
             <div className='main-banner position-relative p-3'>
@@ -93,267 +95,221 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </Container>
 
       {/* seconds section [SERVICE UNIQUENESS] */}
-      <section className='home-wrapper-2 py-5'>
-        <div className='container-xxl'>
-          <div className='row'>
-            <div className='col-12'>
-              <div className='services d-flex align-items-center justify-content-between'>
-                <div className='d-flex align-items-center gap-15 justify-content-center'>
-                  <img src='images/service.png' alt='' />
-                  <div>
-                    <h6>Free Shipping</h6>
-                    <p className='mb-0'>From all orders over $5</p>
+      <Container class1='home-wrapper-2 py-5'>
+        <div className='row'>
+          <div className='col-12'>
+            <div className='services d-flex align-items-center justify-content-between'>
+              {services?.map((i, j) => {
+                return (
+                  <div className='d-flex align-items-center gap-15 justify-content-center'>
+                    <img src={i.image} alt='' />
+                    <div>
+                      <h6>{i.title}</h6>
+                      <p className='mb-0'>{i.tagline}</p>
+                    </div>
                   </div>
-                </div>
-
-                <div className='d-flex align-items-center gap-15 justify-content-center'>
-                  <img src='images/service-02.png' alt='' />
-                  <div>
-                    <h6>Daily Suprise Offers</h6>
-                    <p className='mb-0'>Save upto 25% off</p>
-                  </div>
-                </div>
-
-                <div className='d-flex align-items-center gap-15 justify-content-center'>
-                  <img src='images/service-03.png' alt='' />
-                  <div>
-                    <h6>Support 24/7</h6>
-                    <p className='mb-0'>Shop with an expert</p>
-                  </div>
-                </div>
-
-                <div className='d-flex align-items-center gap-15 justify-content-center'>
-                  <img src='images/service-04.png' alt='' />
-                  <div>
-                    <h6>Affordable Prices</h6>
-                    <p className='mb-0'>Get factory Default Price</p>
-                  </div>
-                </div>
-
-                <div className='d-flex align-items-center gap-15 justify-content-center'>
-                  <img src='images/service-05.png' alt='' />
-                  <div>
-                    <h6>Secure Payment</h6>
-                    <p className='mb-0'>100% Protected Payment</p>
-                  </div>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
         </div>
-      </section>
+      </Container>
 
       {/* home wrapper third section */}
-      <section className='home-wrapper-2 py5'>
-        <div className='container-xxl'>
-          <div className='row'>
-            <div className='col-12'>
-              <div className='categories d-flex justify-content-between flex-wrap align-items-center'>
-                {/* 1 */}
-                <div className='d-flex align-items-center'>
-                  <div>
-                    <h6>Cameras</h6>
-                    <p>10 Items</p>
-                  </div>
-                  <img src='images/camera.jpg' alt='camera' />
+      <Container class1='home-wrapper-2 py5'>
+        <div className='row'>
+          <div className='col-12'>
+            <div className='categories d-flex justify-content-between flex-wrap align-items-center'>
+              {/* 1 */}
+              <div className='d-flex align-items-center'>
+                <div>
+                  <h6>Cameras</h6>
+                  <p>10 Items</p>
                 </div>
+                <img src='images/camera.jpg' alt='camera' />
+              </div>
 
-                {/* 2 */}
-                <div className='d-flex  align-items-center'>
-                  <div>
-                    <h6>Smart Tv</h6>
-                    <p>12 Items</p>
-                  </div>
-                  <img src='images/tv.jpg' alt='camera' />
+              {/* 2 */}
+              <div className='d-flex  align-items-center'>
+                <div>
+                  <h6>Smart Tv</h6>
+                  <p>12 Items</p>
                 </div>
+                <img src='images/tv.jpg' alt='camera' />
+              </div>
 
-                {/* 3 */}
-                <div className='d-flex align-items-center'>
-                  <div>
-                    <h6>Smart Watches</h6>
-                    <p>10 Items</p>
-                  </div>
-                  <img src='images/camera.jpg' alt='camera' />
+              {/* 3 */}
+              <div className='d-flex align-items-center'>
+                <div>
+                  <h6>Smart Watches</h6>
+                  <p>10 Items</p>
                 </div>
+                <img src='images/camera.jpg' alt='camera' />
+              </div>
 
-                {/* 4 */}
-                <div className='d-flex align-items-center'>
-                  <div>
-                    <h6>Music & Gaming</h6>
-                    <p>11 Items</p>
-                  </div>
-                  <img src='images/headphone.jpg' alt='camera' />
+              {/* 4 */}
+              <div className='d-flex align-items-center'>
+                <div>
+                  <h6>Music & Gaming</h6>
+                  <p>11 Items</p>
                 </div>
+                <img src='images/headphone.jpg' alt='camera' />
+              </div>
 
-                {/* 5 */}
-                <div className='d-flex align-items-center'>
-                  <div>
-                    <h6>Cameras</h6>
-                    <p>10 Items</p>
-                  </div>
-                  <img src='images/camera.jpg' alt='camera' />
+              {/* 5 */}
+              <div className='d-flex align-items-center'>
+                <div>
+                  <h6>Cameras</h6>
+                  <p>10 Items</p>
                 </div>
+                <img src='images/camera.jpg' alt='camera' />
+              </div>
 
-                {/* 6 */}
-                <div className='d-flex align-items-center'>
-                  <div>
-                    <h6>Smart Tv</h6>
-                    <p>12 Items</p>
-                  </div>
-                  <img src='images/tv.jpg' alt='camera' />
+              {/* 6 */}
+              <div className='d-flex align-items-center'>
+                <div>
+                  <h6>Smart Tv</h6>
+                  <p>12 Items</p>
                 </div>
+                <img src='images/tv.jpg' alt='camera' />
+              </div>
 
-                {/* 7 */}
-                <div className='d-flex align-items-center'>
-                  <div>
-                    <h6>Smart Watches</h6>
-                    <p>10 Items</p>
-                  </div>
-                  <img src='images/camera.jpg' alt='camera' />
+              {/* 7 */}
+              <div className='d-flex align-items-center'>
+                <div>
+                  <h6>Smart Watches</h6>
+                  <p>10 Items</p>
                 </div>
+                <img src='images/camera.jpg' alt='camera' />
+              </div>
 
-                {/* 8 */}
-                <div className='d-flex align-items-center'>
-                  <div>
-                    <h6>Music & Gaming</h6>
-                    <p>11 Items</p>
-                  </div>
-                  <img src='images/headphone.jpg' alt='camera' />
+              {/* 8 */}
+              <div className='d-flex align-items-center'>
+                <div>
+                  <h6>Music & Gaming</h6>
+                  <p>11 Items</p>
                 </div>
+                <img src='images/headphone.jpg' alt='camera' />
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </Container>
 
       {/* Feature collection section */}
-      <section className='featured-wrapper py-5 home-wrapper-2'>
-        <div className='container-xxl'>
-          <div className='row'>
-            <div className='col-12'>
-              <h3 className='section-heading'>Featured Collection</h3>
-            </div>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+      <Container class1='featured-wrapper py-5 home-wrapper-2'>
+        <div className='row'>
+          <div className='col-12'>
+            <h3 className='section-heading'>Featured Collection</h3>
           </div>
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
         </div>
-      </section>
+      </Container>
 
       {/* Famous Wrapper */}
-      <section className='famous-wrapper'>
-        <div className='container-xxl'>
-          <div className='row'>
-            {/* 1 */}
-            <div className='col-3'>
-              <div className='famous-card position-relative'>
-                <img
-                  src='images/famous-01.webp'
-                  className='img-fluid'
-                  alt='watch'
-                />
-                <div className='famous-content position-absolute'>
-                  <h5>Big Screen</h5>
-                  <h6>Smart Watch Series</h6>
-                  <p> From $399 or $16.62/mo. for 24 mo.*</p>
-                </div>
+      <Container class1='famous-wrapper py-5 home-wrapper-2'>
+        <div className='row'>
+          {/* 1 */}
+          <div className='col-3'>
+            <div className='famous-card position-relative'>
+              <img
+                src='images/famous-01.webp'
+                className='img-fluid'
+                alt='watch'
+              />
+              <div className='famous-content position-absolute'>
+                <h5>Big Screen</h5>
+                <h6>Smart Watch Series</h6>
+                <p> From $399 or $16.62/mo. for 24 mo.*</p>
               </div>
             </div>
-            {/* 2 */}
-            <div className='col-3'>
-              <div className='famous-card position-relative'>
-                <img
-                  src='images/famous-02.webp'
-                  className='img-fluid'
-                  alt='watch'
-                />
-                <div className='famous-content position-absolute'>
-                  <h5 className='text-dark'>STUDIO DISPLAY</h5>
-                  <h6 className='text-dark'>600 nits of brightness</h6>
-                  <p className='text-dark'> 27-inches 5k Retina Display</p>
-                </div>
+          </div>
+          {/* 2 */}
+          <div className='col-3'>
+            <div className='famous-card position-relative'>
+              <img
+                src='images/famous-02.webp'
+                className='img-fluid'
+                alt='watch'
+              />
+              <div className='famous-content position-absolute'>
+                <h5 className='text-dark'>STUDIO DISPLAY</h5>
+                <h6 className='text-dark'>600 nits of brightness</h6>
+                <p className='text-dark'> 27-inches 5k Retina Display</p>
               </div>
             </div>
-            {/* 3 */}
-            <div className='col-3'>
-              <div className='famous-card text-dark position-relative'>
-                <img
-                  src='images/famous-03.webp'
-                  className='img-fluid'
-                  alt='watch'
-                />
-                <div className='famous-content position-absolute'>
-                  <h5 className='text-dark'>SMARTPHONES</h5>
-                  <h6 className='text-dark'>Smartphone 13 Pro.</h6>
-                  <p className='text-dark'>
-                    Now in Green from $999.00 or $41.62/mo. for 24 mo. footnote*
-                  </p>
-                </div>
+          </div>
+          {/* 3 */}
+          <div className='col-3'>
+            <div className='famous-card text-dark position-relative'>
+              <img
+                src='images/famous-03.webp'
+                className='img-fluid'
+                alt='watch'
+              />
+              <div className='famous-content position-absolute'>
+                <h5 className='text-dark'>SMARTPHONES</h5>
+                <h6 className='text-dark'>Smartphone 13 Pro.</h6>
+                <p className='text-dark'>
+                  Now in Green from $999.00 or $41.62/mo. for 24 mo. footnote*
+                </p>
               </div>
             </div>
-            {/* 4 */}
-            <div className='col-3'>
-              <div className='famous-card  text-dark position-relative'>
-                <img
-                  src='images/famous-04.webp'
-                  className='img-fluid'
-                  alt='watch'
-                />
-                <div className='famous-content position-absolute'>
-                  <h5 className='text-dark'>HOME SPACING</h5>
-                  <h6 className='text-dark'>Room-filling sound</h6>
-                  <p className='text-dark'>
-                    From $699 or $116.6258/mo. for 12 mo.*
-                  </p>
-                </div>
+          </div>
+          {/* 4 */}
+          <div className='col-3'>
+            <div className='famous-card  text-dark position-relative'>
+              <img
+                src='images/famous-04.webp'
+                className='img-fluid'
+                alt='watch'
+              />
+              <div className='famous-content position-absolute'>
+                <h5 className='text-dark'>HOME SPACING</h5>
+                <h6 className='text-dark'>Room-filling sound</h6>
+                <p className='text-dark'>
+                  From $699 or $116.6258/mo. for 12 mo.*
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </Container>
 
       {/* SPECIAL PRODUCT SECTION */}
-      <section className='special-wrapper py-5 home-wrapper-2'>
-        <div className='container-xxl'>
+      <Container class1='special-wrapper py-5 home-wrapper-2'>
+        <div className='row'>
+          <div className='col-12'>
+            <h3 className='section-heading'>Special Products</h3>
+          </div>
           <div className='row'>
-            <div className='col-12'>
-              <h3 className='section-heading'>Special Products</h3>
-            </div>
-            <div className='row'>
-              <SpecialProduct />
-              <SpecialProduct />
-              <SpecialProduct />
-            </div>
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
           </div>
         </div>
-      </section>
+      </Container>
 
       {/* Popular product section */}
-      <section className='popular-wrapper py-5 home-wrapper-2'>
-        <div className='container-xxl'>
-          <div className='row'>
-            <div className='col-12'>
-              <h3 className='section-heading'>Our Popular Products</h3>
-            </div>
-          </div>
-          <div className='row'>
-            {/* <div className='col-2'>
-              <div className='card'></div>
-            </div>
-            <div className='col-2'>
-              <div className='card'></div>
-            </div> */}
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+      <Container class1='popular-wrapper py-5 home-wrapper-2'>
+        <div className='row'>
+          <div className='col-12'>
+            <h3 className='section-heading'>Our Popular Products</h3>
           </div>
         </div>
-      </section>
+        <div className='row'>
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+        </div>
+      </Container>
 
       {/* fourth section */}
       <section className='marque-wrapper py-5'>
