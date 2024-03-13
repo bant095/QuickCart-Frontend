@@ -41,7 +41,7 @@ const OurStore = () => {
                     value=''
                     id=''
                   />
-                  <label className='form-check-label' for=''>
+                  <label className='form-check-label' htmlFor=''>
                     In Stock (2)
                   </label>
                 </div>
@@ -52,7 +52,7 @@ const OurStore = () => {
                     value=''
                     id=''
                   />
-                  <label className='form-check-label' for=''>
+                  <label className='form-check-label' htmlFor=''>
                     Out of Stock (1)
                   </label>
                 </div>
@@ -69,7 +69,7 @@ const OurStore = () => {
                       id='floatingInput'
                       placeholder='From'
                     />
-                    <label for='floatingInput'>From</label>
+                    <label htmlFor='floatingInput'>From</label>
                   </div>
                   <div className='form-floating '>
                     <input
@@ -78,7 +78,7 @@ const OurStore = () => {
                       id='floatingInput'
                       placeholder='To'
                     />
-                    <label for='floatingInput'>To</label>
+                    <label htmlFor='floatingInput'>To</label>
                   </div>
                 </div>
               </div>
@@ -96,7 +96,7 @@ const OurStore = () => {
                     value=''
                     id='color-1'
                   />
-                  <label className='form-check-label' for=''>
+                  <label className='form-check-label' htmlFor=''>
                     S (10)
                   </label>
                 </div>
@@ -107,7 +107,7 @@ const OurStore = () => {
                     value=''
                     id='color-2'
                   />
-                  <label className='form-check-label' for=''>
+                  <label className='form-check-label' htmlFor=''>
                     M (13)
                   </label>
                 </div>
@@ -119,7 +119,7 @@ const OurStore = () => {
                     value=''
                     id='color-3'
                   />
-                  <label className='form-check-label' for=''>
+                  <label className='form-check-label' htmlFor=''>
                     L (9)
                   </label>
                 </div>
@@ -131,7 +131,7 @@ const OurStore = () => {
                     value=''
                     id='color-3'
                   />
-                  <label className='form-check-label' for=''>
+                  <label className='form-check-label' htmlFor=''>
                     XL (5)
                   </label>
                 </div>
@@ -143,7 +143,7 @@ const OurStore = () => {
                     value=''
                     id='color-3'
                   />
-                  <label className='form-check-label' for=''>
+                  <label className='form-check-label' htmlFor=''>
                     XXL (5)
                   </label>
                 </div>
@@ -240,13 +240,19 @@ const OurStore = () => {
               <div className='d-flex justify-content-between align-items-center'>
                 {/*sortby   */}
                 <div className='d-flex align-items-center gap-10'>
-                  <p className='mb-0 d-block'>Sort By:</p>
+                  <p className='mb-0 d-block' style={{ width: '100px' }}>
+                    Sort By:
+                  </p>
                   <div class='mb-3'>
-                    <select className='form-select form-control' name='' id=''>
+                    <select
+                      className='form-select form-control'
+                      defaultValue={'manual'}
+                      name=''
+                      id=''
+                    >
+                      <option disabled value='DEFAULT'></option>
                       <option value='manual'>Featured</option>
-                      <option value='best-selling' selected='selected'>
-                        Best selling
-                      </option>
+                      <option value='best-selling'>Best selling</option>
                       <option value='title-ascending'>
                         Alphabetically, A-Z
                       </option>
