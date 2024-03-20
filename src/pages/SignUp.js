@@ -5,17 +5,21 @@ import { Link } from 'react-router-dom';
 import Container from '../components/Container';
 import CustomInput from '../components/CustomInput';
 import { useFormik } from 'formik';
+import { useDispatch } from 'react-redux';
+import { registerUser } from '../features/user/userSlice';
+
 import * as yup from 'yup';
 
 const signupSchema = yup.object({
-  firstName: yup.string().defined('First Name is Required'),
-  lastName: yup.string().required('Last Name is Requred'),
+  firstname: yup.string().required('First Name is Required'),
+  lastname: yup.string().required('Last Name is Requred'),
   email: yup.string().nullable().email('Email Should be valid'),
   mobile: yup.string().required('Mobile Number is required'),
   password: yup.string().required('Password is required'),
 });
 
 const SignUp = () => {
+  const dispatch = useDispatch();
   const formik = useFormik({
     initialValues: {
       firstname: '',
@@ -26,7 +30,8 @@ const SignUp = () => {
     },
     validationSchema: signupSchema,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      // alert(JSON.stringify(values, null, 2));
+      dispatch(registerUser(values));
     },
   });
 
@@ -48,7 +53,7 @@ const SignUp = () => {
                   type='text'
                   name='firstname'
                   placeholder='First Name'
-                  values={formik.values.firstname}
+                  value={formik.values.firstname}
                   onChange={formik.handleChange('firstname')}
                   onBlur={formik.handleBlur('firstname')}
                 />
@@ -61,7 +66,7 @@ const SignUp = () => {
                   type='text'
                   name='lastname'
                   placeholder='Last Name'
-                  values={formik.values.lastname}
+                  value={formik.values.lastname}
                   onChange={formik.handleChange('lastname')}
                   onBlur={formik.handleBlur('lastname')}
                 />
@@ -74,7 +79,7 @@ const SignUp = () => {
                   type='text'
                   name='email'
                   placeholder='Email Address'
-                  values={formik.values.email}
+                  value={formik.values.email}
                   onChange={formik.handleChange('email')}
                   onBlur={formik.handleBlur('email')}
                 />
@@ -87,7 +92,7 @@ const SignUp = () => {
                   type='tel'
                   name='mobile'
                   placeholder='Phone Number'
-                  values={formik.values.mobile}
+                  value={formik.values.mobile}
                   onChange={formik.handleChange('mobile')}
                   onBlur={formik.handleBlur('mobile')}
                 />
@@ -100,7 +105,7 @@ const SignUp = () => {
                   type='password'
                   name='password'
                   placeholder='Password'
-                  values={formik.values.password}
+                  value={formik.values.password}
                   onChange={formik.handleChange('password')}
                   onBlur={formik.handleBlur('password')}
                 />

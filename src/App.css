@@ -692,6 +692,11 @@ footer:not(:first-child) {
   background-color: var(--color-131921);
   color: white;
 }
+
+.error {
+  color: red;
+  font-size: 12px;
+}
 /* Auth Card end */
 
 /* -============== */
